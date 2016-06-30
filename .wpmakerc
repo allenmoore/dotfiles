@@ -1,0 +1,32 @@
+; You can define a default profile to use if no other is specified
+default = Basic
+
+[Basic]
+  ; Define the license to be used for the project (use SPDX formats)
+  license        = MIT
+  ; Define the standard root namespace for PHP files, otherwise `\TenUp` will be used
+  root_namespace AllenMoore
+  ; Define the minimum versions of PHP/WordPress required, as well as the highest WP version tested
+  php_min        = 7.0
+  wp_tested      = 4.5
+  wp_min         = 4.5
+  ; Override standard author information, otherwise the current Git user will be used
+  authorName     = Allen Moore
+  authorEmail    = am@allenmoore.me
+  authorUrl      = https://allenmoore.me
+  ; Set a standard project homepage - this will be used as the prompt default
+  projectHome    = https://allenmoore.me
+
+[Enterprise]
+  ; If no license is required, pass `false` for both licensing fields to omit them from all output
+  license        = false
+  licenseuri     = false
+  ; Specify the string `prompt` for fields that need to be prompted at runtime
+  root_namespace = prompt
+  php_min        = 5.3
+  wp_tested      = 4.4.2
+  wp_min         = 4.2.0
+  authorName     = 10up, Inc.
+  authorEmail    = info@10up.com
+  authorUrl      = https://10up.com
+  projectHome    = https://10up.com
